@@ -60,12 +60,12 @@ def perform_OCR(reader, input_path: str):
             "text": text.lower(),
             "conf_level": round(np_to_python(confident_level), 2),
             "bounding_box":
-                (
+                [
                     np_to_python(bounding_box[0][0]),
                     np_to_python(bounding_box[0][1]),
                     np_to_python(bounding_box[2][0]),
                     np_to_python(bounding_box[2][1])
-                )
+                ]
          } for bounding_box, text, confident_level in result
     ]
 
