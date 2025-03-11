@@ -1,0 +1,7 @@
+easyocr
+torch
+torchvision
+torchaudio
+pyautogui
+playwright
+pillow
